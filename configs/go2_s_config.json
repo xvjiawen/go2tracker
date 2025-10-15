@@ -1,0 +1,18 @@
+{
+  "model_cfg_path": "./configs/yolo_uniow_s_notext-transform.py",
+  "model_path": "./models/model.pth",
+  "device": "cuda:6",
+  "score_thr": 0.2,
+  "tracker": {
+    "track_thresh": 0.35,
+    "init_thresh": 0.3,
+    "lost_track_buffer": 10,
+    "first_matching_threshold": 0.8,
+    "second_matching_threshold": 0.8,
+    "minimum_consecutive_frames": 5
+  },
+  "video_reader": {
+    "sample_rate": 5,
+    "maxsize": 3000
+  }
+}
